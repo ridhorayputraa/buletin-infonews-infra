@@ -9,6 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+    //  this table is for admin data
     public function up(): void
     {
         Schema::create('authors', function (Blueprint $table) {
