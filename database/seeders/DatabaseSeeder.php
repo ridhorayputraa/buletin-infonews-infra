@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use Carbon\Carbon;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -20,8 +22,16 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        DB::table('category')->insert([
-            ''
+        DB::table('categories')->insert([
+            'name' => 'mahasiswa',
+            'slug' => 'mahasiswa',
+            'created_at' => Carbon::now()
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'nasional',
+            'slug' => 'nasional',
+            'created_at' => Carbon::now()
         ]);
     }
 }
