@@ -39,7 +39,7 @@ class DatabaseSeeder extends Seeder
         DB::table('authors')->insert([
             'name' => 'Admin informa abdul',
             'email' => 'abdul@informa.com',
-            'passowrd' => '1223332'
+            'password' => '1223332'
         ]);
 
         DB::table('news')->insert([
