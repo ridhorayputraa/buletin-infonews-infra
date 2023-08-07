@@ -33,5 +33,8 @@ class DatabaseSeeder extends Seeder
             'slug' => 'nasional',
             'created_at' => Carbon::now()
         ]);
+
+
+        DB::table('news')
     }
 }
