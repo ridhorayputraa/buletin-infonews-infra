@@ -36,7 +36,11 @@ class DatabaseSeeder extends Seeder
             'created_at' => Carbon::now()
         ]);
 
-        
+        DB::table('authors')->insert([
+            'name' => 'Admin informa abdul',
+            'email' => 'abdul@informa.com',
+            'passowrd' => '1223332'
+        ]);
 
         DB::table('news')->insert([
             'category_id' => 1,
