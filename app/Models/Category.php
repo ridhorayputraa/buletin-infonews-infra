@@ -12,8 +12,8 @@ class Category extends Model
     protected $guarded = ['id'];
     public $timestamps = true;
 
-    public function News()
+    public function news()
     {
-        return $this->hasMany(News::class);
+        return $this->hasMany(News::class,'category_id');
     }
 }

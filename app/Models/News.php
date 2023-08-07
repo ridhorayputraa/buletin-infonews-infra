@@ -11,8 +11,8 @@ class News extends Model
 
     protected $guarded = ['id'];
 
-    public function Category()
+    public function category()
     {
-        return $this->hasOne(Category::class);
+        return $this->belongsTo(Category::class);
     }
 }
