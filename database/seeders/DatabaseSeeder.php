@@ -42,6 +42,9 @@ class DatabaseSeeder extends Seeder
             'password' => '1223332'
         ]);
 
+
+        
+
         // Addin more data mockup in here
         DB::table('news')->insert([
             'category_id' => 1,
