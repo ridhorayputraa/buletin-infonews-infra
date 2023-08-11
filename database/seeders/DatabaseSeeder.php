@@ -43,7 +43,13 @@ class DatabaseSeeder extends Seeder
         ]);
 
 
-        
+        // Seeder User
+        DB::table('users')->insert([
+            'name' => 'Ridho ganteng',
+            'email' => 'ridhorayputra033@gmail.com',
+            'password' => '123456'
+        ]);
+
 
         // Addin more data mockup in here
         DB::table('news')->insert([
