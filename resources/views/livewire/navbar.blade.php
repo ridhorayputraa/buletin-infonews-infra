@@ -14,9 +14,8 @@
                 </button>
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="flex-shrink-0">
-                    <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
-                        alt="Logo">
+                <div class="flex-shrink-0 ">
+                    <img class="h-8 w-auto" src="{{ asset('images/Logo.svg') }}" alt="Informa story">
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
