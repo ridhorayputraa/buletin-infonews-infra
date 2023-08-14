@@ -15,15 +15,21 @@
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="border border-red-500 ">
-                    <img class="" width="107px" src="{{ asset('images/Logo.svg') }}" alt="Informa story">
-                    {{-- {{ $category }} --}}
+                    <a href="{{ url('/') }}">
+                        <img class="" width="107px" src="{{ asset('images/Logo.svg') }}" alt="Informa story">
+                        {{-- {{ $category }} --}}
+                    </a>
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
                         @foreach ($categories as $category)
                             <a href="{{ route('category.show', $category->slug) }}"
-                                class="block px-4 py-2 @if ($category->name !== '/name') font-bold @endif">{{ $category->name }}</a>
+                                class="block px-4 py-2 {{ request()->is('category/' . $category->slug) ? 'font-bold' : '' }}">
+                                {{ $category->name }}
+                            </a>
                         @endforeach
+
+
 
                         {{-- <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
