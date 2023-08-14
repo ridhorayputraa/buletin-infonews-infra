@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="antialiased">
+<body class="antialiased bg-background">
     <livewire:navbar />
     <livewire:counter />
     @livewireScripts

@@ -1,5 +1,5 @@
-<nav class="bg-gray-800">
-    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+<nav class="bg-grey shadow-md">
+    <div class="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <button id="mobile-menu-button"
