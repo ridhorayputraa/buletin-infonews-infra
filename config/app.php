@@ -1,7 +1,9 @@
 <?php
 
+// use Clockwork\Support\Laravel\ClockworkServiceProvider;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
+// ClockworkServiceProvider
 
 return [
 
@@ -183,6 +185,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Clockwork' => Clockwork\Support\Laravel\Facade::class,
     ])->toArray(),
-
+    // 'providers' => [
+    //     Clockwork\Support\Laravel\ClockworkServiceProvider::class
+    // ]
 ];
