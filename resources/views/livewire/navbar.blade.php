@@ -15,19 +15,22 @@
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                 <div class="border border-red-500 ">
-                    <img class="" width="107px" src="{{ asset('images/Logo.svg') }}"
-                        alt="Informa story">
+                    <img class="" width="107px" src="{{ asset('images/Logo.svg') }}" alt="Informa story">
+                    {{-- {{ $category }} --}}
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                     <div class="flex space-x-4">
-                        <a href="#"
-                            class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
-                        <a href="#"
+                        @foreach ($categories as $category)
+                            <a href="{{ route('category.show', $category->slug) }}"
+                                class="block px-4 py-2 @if ($category->name !== '/name') font-bold @endif">{{ $category->name }}</a>
+                        @endforeach
+
+                        {{-- <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">About</a>
                         <a href="#"
                             class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Services</a>
                         <a href="#"
-                            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a>
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Contact</a> --}}
                     </div>
                 </div>
             </div>
