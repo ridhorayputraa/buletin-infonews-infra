@@ -19,6 +19,7 @@
 </head>
 
 <body class="antialiased">
+    <livewire:navbar />
     <livewire:counter />
     @livewireScripts
     <h1 class="text-2xl text-red-500 font-bold">Ridhoo</h1>
