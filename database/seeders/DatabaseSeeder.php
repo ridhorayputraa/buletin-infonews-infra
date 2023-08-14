@@ -24,17 +24,53 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
+        // Table Category
+
         DB::table('categories')->insert([
-            'name' => 'mahasiswa',
+            'name' => 'Mahasiswa',
             'slug' => 'mahasiswa',
             'created_at' => Carbon::now()
         ]);
 
         DB::table('categories')->insert([
-            'name' => 'nasional',
+            'name' => 'Nasional',
             'slug' => 'nasional',
             'created_at' => Carbon::now()
         ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Politik',
+            'slug' => 'politik',
+            'created_at' => Carbon::now()
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Opini',
+            'slug' => 'opini',
+            'created_at' => Carbon::now()
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Pendidikan',
+            'slug' => 'pendidikan',
+            'created_at' => Carbon::now()
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Sosial',
+            'slug' => 'sosial',
+            'created_at' => Carbon::now()
+        ]);
+
+        DB::table('categories')->insert([
+            'name' => 'Teknologi',
+            'slug' => 'teknologi',
+            'created_at' => Carbon::now()
+        ]);
+
+
+
+        // table Authors
 
         DB::table('authors')->insert([
             'name' => 'Admin informa abdul',
