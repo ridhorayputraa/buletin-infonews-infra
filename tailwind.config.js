@@ -6,10 +6,15 @@ module.exports = {
         "./resources/**/*.vue",
     ],
     theme: {
+        fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+        },
         extend: {},
         colors: {
-          grey: '#ECECEC',
-          background : '#F6F9FF'
+            blackPrimary: '#404040',
+            redHeavy: '#FB4141',
+            grey: "#ECECEC",
+            background: "#F6F9FF",
         },
     },
     plugins: [],
