@@ -14,7 +14,7 @@
                 </button>
             </div>
             <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                <div class="border border-red-500 ">
+                <div class=" ">
                     <a href="{{ url('/') }}">
                         <img class="" width="107px" src="{{ asset('images/Logo.svg') }}" alt="Informa story">
                         {{-- {{ $category }} --}}
