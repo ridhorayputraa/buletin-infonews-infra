@@ -108,7 +108,7 @@ class DatabaseSeeder extends Seeder
             Ganjar merupakan bakal capres 2024 yang diusung 2024. Ia juga turut didukung oleh PPP, Hanura, Perindo dan PSI.(fby/end)',
 
             'slug' => Str::excerpt('Alasan Ganjar Safari Politik Di Bogor'),
-            'thumbnail' => 'image.png',
+            'thumbnail' => 'ganjar-pranowo-3_169.png',
             'photo_description' => 'Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah yang menarik bagi para politisi. (dok. DPP PDIP)',
 
 
