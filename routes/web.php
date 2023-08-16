@@ -1,6 +1,8 @@
 <?php
 
+use App\Http\Controllers\CategoryController;
 use App\Http\Livewire\Article;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,11 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('app');
+    return view('home', [
+        'categories' => Category::all()
+    ]);
 });
+Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
 
+// use App\Http\Livewire\CategoryShow;
 
-use App\Http\Livewire\CategoryShow;
-
-Route::get('/category/{slug}', CategoryShow::class)->name('category.show');
-Route::get('article', Article::class)->name('article');
+// Route::get('article', Article::class)->name('article');
