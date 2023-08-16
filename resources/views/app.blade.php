@@ -13,6 +13,7 @@
 
     @livewireStyles
     <!-- Styles -->
+    {{-- mix.postCss('resources/css/app.css', 'public/css'); --}}
     @vite('resources/css/app.css')
     @vite('resources/js/app.js')
 
