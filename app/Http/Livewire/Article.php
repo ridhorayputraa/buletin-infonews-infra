@@ -4,10 +4,10 @@ namespace App\Http\Livewire;
 
 use Livewire\Component;
 
-class CategoryShow extends Component
+class Article extends Component
 {
     public function render()
     {
-        return view('livewire.category-show');
+        return view('livewire.article');
     }
 }

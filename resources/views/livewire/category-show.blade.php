@@ -1,5 +1,5 @@
+{{-- @dd($category) --}}
 <div>
-    <h1>{{ $category->name }}</h1>
-    <p>{{ $category->description }}</p>
-    <!-- Tambahkan tampilan kategori lainnya sesuai kebutuhan Anda -->
+    <p>sasas</p>
+    {{-- Because she competes with no one, no one can compete with her. --}}
 </div>

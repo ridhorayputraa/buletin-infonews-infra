@@ -19,8 +19,8 @@
 </head>
 
 <body class="antialiased bg-background">
-    <livewire:navbar />
-    <livewire:counter />
+    @include('partials.navbar')
+
     @livewireScripts
     <h1 class="text-2xl text-red-500 font-bold">Ridhoo</h1>
 </body>

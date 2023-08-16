@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Livewire\Article;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -21,3 +22,4 @@ Route::get('/', function () {
 use App\Http\Livewire\CategoryShow;
 
 Route::get('/category/{slug}', CategoryShow::class)->name('category.show');
+Route::get('article', Article::class)->name('article');
