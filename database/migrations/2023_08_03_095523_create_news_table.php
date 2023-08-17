@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('slug')->unique();
             $table->text('thumbnail');
             $table->string('photo_description');
-            $table->timestamp('published_at')->nullable();
+            $table->timestamp('published_at');
             $table->timestamps();
         });
     }
