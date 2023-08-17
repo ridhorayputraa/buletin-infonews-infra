@@ -1,5 +1,5 @@
 <nav class="bg-grey shadow-md">
-    <div class="mx-auto  max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto  max-w-screen-2xl px-2 sm:px-6 lg:px-8">
         <div class="relative border border-redHeavy flex items-center justify-between h-16">
             <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 <button id="mobile-menu-button"
@@ -24,7 +24,7 @@
                     <div class="flex space-x-4">
                         @foreach ($categories as $category)
                             <a href="{{ route('category.show', $category->slug) }}"
-                                class="block px-4 py-2 font-poppins {{ request()->is('category/' . $category->slug) ? 'font-medium text-redHeavy' : ' font-normal text-blackPrimary' }}">
+                                class="block px-4 py-2 font-poppins {{ request()->is('category/' . $category->slug) ? 'duration-300 font-medium text-redHeavy' : ' font-normal text-blackPrimary hover:text-redHeavy ' }}">
                                 {{ $category->name }}
                             </a>
                         @endforeach

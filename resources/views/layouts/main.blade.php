@@ -21,7 +21,7 @@
 <body class="antialiased bg-background">
     @include('partials.navbar')
 
-    <div>
+    <div class="mx-auto  max-w-screen-2xl px-2 sm:px-6 lg:px-8">
         @yield('container')
     </div>
     @livewireScripts
