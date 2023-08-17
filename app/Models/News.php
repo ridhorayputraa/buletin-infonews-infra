@@ -15,4 +15,10 @@ class News extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function authors()
+    {
+        return $this->belongsTo(Author::class, 'author_id');
+    }
+
 }

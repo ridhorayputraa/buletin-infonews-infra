@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Author extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
+    public function news()
+    {
+        return $this->hasMany(News::class);
+    }
 }
