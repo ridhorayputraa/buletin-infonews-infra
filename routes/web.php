@@ -3,6 +3,7 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Livewire\Article;
 use App\Models\Category;
+use App\Models\News;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,8 +18,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    $news = News::with('category')->get();
     return view('home', [
-        'categories' => Category::all()
+        'categories' => Category::all(),
+        'news' => $news
     ]);
 });
 Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
