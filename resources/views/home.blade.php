@@ -1,4 +1,4 @@
-@dd($news)
+{{-- @dd($news) --}}
 @extends('layouts.main')
 
 @section('container')
@@ -18,7 +18,7 @@
             <h1>{{ $news[0]->authors->name }}</h1>
             <h1>{{ $news[0]->excerpt }}</h1>
             <h1>{{ $news[0]->body }}</h1>
-
+            <p>Published: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($news[0]->published_at))->diffForHumans() }}</p>
             <p>{{ $news[0]->photo_description }}</p>
         </div>
     </div>

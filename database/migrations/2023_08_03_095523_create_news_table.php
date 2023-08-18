@@ -22,6 +22,7 @@ return new class extends Migration
             $table->text('thumbnail');
             $table->string('photo_description');
             $table->timestamp('published_at');
+            // $table->timestamp('created_at');
             $table->timestamps();
         });
     }

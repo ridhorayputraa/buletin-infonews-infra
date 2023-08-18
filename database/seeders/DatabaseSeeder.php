@@ -117,7 +117,9 @@ class DatabaseSeeder extends Seeder
             'slug' => Str::excerpt('Alasan Ganjar Safari Politik Di Bogor'),
             'thumbnail' => 'ganjar-pranowo-3_169.png',
             'photo_description' => 'Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah yang menarik bagi para politisi. (dok. DPP PDIP)',
-
+            'published_at' => now(), // Tambahkan ini untuk mengisi published_at
+            'created_at' => now(), // Tambahkan ini untuk mengisi created_at
+            'updated_at' => now(), // Tambahkan ini untuk mengisi updated_at
 
         ]);
 
@@ -143,7 +145,9 @@ class DatabaseSeeder extends Seeder
 
             'thumbnail' => 'ganjar-pranowo-3_169.png',
             'photo_description' => 'Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah yang menarik bagi para politisi. (dok. DPP PDIP)',
-
+            'created_at' => now(), // Tambahkan ini untuk mengisi created_at
+            'updated_at' => now(), // Tambahkan ini untuk mengisi updated_at
+            'published_at' => now(), // Tambahkan ini untuk mengisi published_at
 
         ]);
 
@@ -171,7 +175,9 @@ class DatabaseSeeder extends Seeder
 
             'thumbnail' => 'ilustrasi-penembakan-3_169.jpeg',
             'photo_description' => 'Ilustrasi. Dua botol alkohol jenis anggur ditemukan di tempat sampah lokasi tewasnya Bripda Ignatius. Pelaku mengakui membuang botol usai mengonsumsinya. (iStockphoto/Maxiphoto)',
-
+            'updated_at' => now(), // Tambahkan ini untuk mengisi updated_at
+            'published_at' => now(), // Tambahkan ini untuk mengisi published_at
+            'created_at' => now(), // Tambahkan ini untuk mengisi created_at
 
         ]);
     }
