@@ -18,10 +18,10 @@
             <div class="flex  items-center gap-2 ">
                 <a href="{{ route('category.show', $news[0]->category->slug) }}"
                     class="font-poppins font-normal text-base text-redHeavy">{{ $news[0]->category->name }}</a>
-                <div>.</div>
-                <p class="font-poppins font-normal text-base">{{ $news[0]->authors->name }}</p>
-                <div>.</div>
-                <p class="font-poppins font-normal text-base">Published:
+                <div class="text-blackTrans">.</div>
+                <p class="font-poppins font-normal text-blackTrans text-base">{{ $news[0]->authors->name }}</p>
+                <div class="text-blackTrans">.</div>
+                <p class="font-poppins font-normal text-blackTrans text-base">Published:
                     {{ \Carbon\Carbon::createFromTimeStamp(strtotime($news[0]->published_at))->diffForHumans() }}
                 </p>
             </div>
