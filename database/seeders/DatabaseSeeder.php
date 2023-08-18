@@ -100,7 +100,7 @@ class DatabaseSeeder extends Seeder
             'author_id' => 1,
             'title' => 'Alasan Ganjar Safari Politik Di Bogor Jumlah Pemilihnya Minta Ampun',
             'excerpt' => Str::excerpt('Alasan Ganjar Safari Politik Di Bogor'),
-            'body' => 'Jakarta, CNN Indonesia -- Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah dengan jumlah pemilih banyak. Hal itu membuat Bogor menjadi menarik bagi para politisi.
+            'body' => 'Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah dengan jumlah pemilih banyak. Hal itu membuat Bogor menjadi menarik bagi para politisi.
 
             Pernyataan itu disampaikan Ganjar kala ditanya alasannya memilih Bogor sebagai salah satu daerah untuk bersafari politik.
             
@@ -129,7 +129,7 @@ class DatabaseSeeder extends Seeder
             'title' => 'Alasan Ganjar Safari Politik Di Bogor Jumlah tapi nasional',
             'slug' => Str::excerpt('Alasan Ganjar Safari Politik Di Bogor tapi nasional'),
             'excerpt' => Str::excerpt('Alasan Ganjar Safari Politik Di Bogor tapi nasional'),
-            'body' => 'Jakarta, CNN Indonesia -- Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah dengan jumlah pemilih banyak. Hal itu membuat Bogor menjadi menarik bagi para politisi.
+            'body' => 'Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah dengan jumlah pemilih banyak. Hal itu membuat Bogor menjadi menarik bagi para politisi.
 
             Pernyataan itu disampaikan Ganjar kala ditanya alasannya memilih Bogor sebagai salah satu daerah untuk bersafari politik.
             
@@ -157,7 +157,7 @@ class DatabaseSeeder extends Seeder
             'title' => 'Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius',
             'slug' => Str::excerpt('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius'),
             'excerpt' => Str::excerpt('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius'),
-            'body' => 'Jakarta, CNN Indonesia -- Polisi menyebut menemukan dua botol alkohol jenis anggur di tempat sampah Rusun Polri Cikeas, Bogor, Jawa Barat, yang menjadi lokasi tewasnya Bripda Ignatius Dwi Frisco Sirage. Ia tewas tertembak oleh rekannya, Bripda IMS.
+            'body' => 'Polisi menyebut menemukan dua botol alkohol jenis anggur di tempat sampah Rusun Polri Cikeas, Bogor, Jawa Barat, yang menjadi lokasi tewasnya Bripda Ignatius Dwi Frisco Sirage. Ia tewas tertembak oleh rekannya, Bripda IMS.
             "Botol-botol ditemukan di tempat sampah di belakang rusun. Ada dua botol anggur merek Kawa-Kawa," ujar Direktur Reserse Kriminal Umum Polda Jawa Barat Kombes Surawan saat dikonfirmasi, Rabu (2/8).
             Surawan mengatakan temuan botol tersebut juga telah dikonfirmasi penyidik kepada Bripda IMS dan saksi yang berada di lokasi. Ia menyebut pelaku sudah mengakui bahwa botol alkohol jenis anggur tersebut merupakan sisa yang sudah dibuang seusai dikonsumsi.
 

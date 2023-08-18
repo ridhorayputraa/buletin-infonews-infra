@@ -9,9 +9,11 @@
 
             <img class="rounded-3xl	" width="656" height="399" src="{{ asset('storage/images/' . $news[0]->thumbnail) }}"
                 alt="" title="" />
+            <p class="text-blackPrimary text-opacity-70 text-sm font-poppins">{{ $news[0]->photo_description }}</p>
+
         </div>
 
-        <div class="w-3/6 mr-5 border  border-redHeavy">
+        <div class="w-3/6 mr-5 border flex flex-col gap-4 py-7 border-redHeavy">
 
             <div class="flex  items-center gap-2 ">
                 <a href="{{ route('category.show', $news[0]->category->slug) }}"
@@ -24,12 +26,12 @@
                 </p>
             </div>
 
-            <p>{{ $news[0]->title }}</p>
+            <p class="text-blackPrimary font-serif	font-bold text-5xl ">{{ $news[0]->title }}</p>
 
-            <p>{{ $news[0]->photo_description }}</p>
 
-            <h1>{{ $news[0]->excerpt }}</h1>
-            <h1>{{ $news[0]->body }}</h1>
+            {{-- <p class="truncate">{{ $news[0]->excerpt }}</p> --}}
+            <p class="text-blackPrimary text-1xl font-normal font-poppins">
+                {{ Illuminate\Support\Str::limit($news[0]->body, 370) }}</p>
         </div>
     </div>
 @endsection
