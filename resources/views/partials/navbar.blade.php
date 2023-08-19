@@ -24,7 +24,7 @@
                     <div class="flex space-x-4">
                         @foreach ($categories as $category)
                             <a href="{{ route('category.show', $category->slug) }}"
-                                class="block px-4 py-2 font-poppins {{ request()->is('category/' . $category->slug) ? 'duration-300 font-medium text-redHeavy' : ' font-normal text-blackPrimary hover:text-redHeavy ' }}">
+                                class="block px-4 py-2 font-poppins {{ request()->is('category/' . $category->slug) ? 'duration-300 font-medium text-redHeavy' : ' font-normal duration-300 text-blackPrimary hover:text-redHeavy ' }}">
                                 {{ $category->name }}
                             </a>
                         @endforeach

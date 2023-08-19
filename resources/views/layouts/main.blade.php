@@ -24,8 +24,11 @@
     <div class="mx-auto  max-w-screen-2xl px-2 sm:px-6 lg:px-8">
         @yield('container')
     </div>
+
+
+    @yield('homecontent')
+
     @livewireScripts
-    <h1 class="text-2xl text-red-500 font-bold">Ridhoo</h1>
 </body>
 
 </html>
