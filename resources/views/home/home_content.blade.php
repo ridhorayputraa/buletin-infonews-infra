@@ -4,4 +4,6 @@
     {{-- @dd($category) --}}
     <p>Ridho keren</p>
 
+{{-- Ngaak work cuy --}}
+
 @endsection
