@@ -180,5 +180,34 @@ class DatabaseSeeder extends Seeder
             'created_at' => now(), // Tambahkan ini untuk mengisi created_at
 
         ]);
+        DB::table('news')->insert([
+            'category_id' => 3,
+            'author_id' => 2,
+            'title' => 'Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius',
+            'slug' => Str::excerpt('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius'),
+            'excerpt' => Str::excerpt('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius'),
+            'body' => 'Polisi menyebut menemukan dua botol alkohol jenis anggur di tempat sampah Rusun Polri Cikeas, Bogor, Jawa Barat, yang menjadi lokasi tewasnya Bripda Ignatius Dwi Frisco Sirage. Ia tewas tertembak oleh rekannya, Bripda IMS.
+            "Botol-botol ditemukan di tempat sampah di belakang rusun. Ada dua botol anggur merek Kawa-Kawa," ujar Direktur Reserse Kriminal Umum Polda Jawa Barat Kombes Surawan saat dikonfirmasi, Rabu (2/8).
+            Surawan mengatakan temuan botol tersebut juga telah dikonfirmasi penyidik kepada Bripda IMS dan saksi yang berada di lokasi. Ia menyebut pelaku sudah mengakui bahwa botol alkohol jenis anggur tersebut merupakan sisa yang sudah dibuang seusai dikonsumsi.
+
+            "Sudah diakui pelaku," jelasnya.
+            
+            Bripda Ignatius tewas tertembak di Rusun Polri Cikeas, Minggu (23/7) pukul 01.40 WIB. Dua pelaku penembakan yakni Bripda IMS dan Bripka IG telah ditangkap dan ditahan.
+            
+            Karo Penmas Polri Brigjen Ahmad Ramadhan mengatakan Bripda Ignatius tewas usai terkena peluru senjata api rakitan non organik alias ilegal milik tersangka Bripka IG yang saat itu dipegang Bripda IMS.
+            
+            Kedua tersangka akan dikonfrontir untuk mendalami asal usul senjata api ilegal yang menewaskan Bripda Ignatius.
+            
+            Atas perbuatannya, Bripda IMS dijerat dengan Pasal 338 KUHP dan atau Pasal 359 KUHP dan atau Undang-undang Darurat RI Nomor 12 Tahun 1951.
+
+            Sementara Bripka IG dikenakan Pasal 338 KUHP Juncto Pasal 56 dan atau Pasal 359 KUHP Juncto Pasal 56 dan atau Undang-undang Darurat RI Nomor 12 Tahun 1951.',
+
+            'thumbnail' => 'ilustrasi-penembakan-3_169.jpeg',
+            'photo_description' => 'Ilustrasi. Dua botol alkohol jenis anggur ditemukan di tempat sampah lokasi tewasnya Bripda Ignatius. Pelaku mengakui membuang botol usai mengonsumsinya. (iStockphoto/Maxiphoto)',
+            'updated_at' => now(), // Tambahkan ini untuk mengisi updated_at
+            'published_at' => now(), // Tambahkan ini untuk mengisi published_at
+            'created_at' => now(), // Tambahkan ini untuk mengisi created_at
+
+        ]);
     }
 }
