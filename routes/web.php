@@ -20,7 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $news = News::with('category', 'authors')->get();
-    return view('home', [
+    return view('home.home', [
         'categories' => Category::all(),
         'news' => $news
     ]);
