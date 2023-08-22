@@ -34,6 +34,7 @@
                 {{ Illuminate\Support\Str::limit($news[0]->body, 370) }}</p>
         </div>
     </div>
+    <p>ridho</p>
 @endsection
 
 
