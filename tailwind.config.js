@@ -17,6 +17,7 @@ module.exports = {
             redHeavy: "#FB4141",
             grey: "#ECECEC",
             background: "#F6F9FF",
+            radius: "rgba(229, 229, 229, 0.60)",
         },
     },
     plugins: [],
