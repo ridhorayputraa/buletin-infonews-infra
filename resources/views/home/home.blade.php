@@ -34,8 +34,13 @@
                 {{ Illuminate\Support\Str::limit($news[0]->body, 370) }}</p>
         </div>
     </div>
+
+    @include('partials.data')
+    
 @endsection
 
-@section('container-row')
-    <p>ridho</p>
-@endsection
+
+
+
+
+
