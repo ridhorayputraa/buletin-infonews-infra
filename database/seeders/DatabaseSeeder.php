@@ -127,7 +127,7 @@ class DatabaseSeeder extends Seeder
             'category_id' => 2,
             'author_id' => 1,
             'title' => 'Alasan Ganjar Safari Politik Di Bogor Jumlah tapi nasional',
-            'slug' => Str::slug(strtolower('Alasan Ganjar Safari Politik Di Bogor Jumlah Pemilihnya Minta Ampun')),
+            'slug' => Str::slug(strtolower('Alasan Ganjar Safari Politik Di Bogor Jumlah tapi nasional cat2')),
             'excerpt' => Str::excerpt('Alasan Ganjar Safari Politik Di Bogor tapi nasional'),
             'body' => 'Bakal calon presiden Ganjar Pranowo mengatakan Bogor, Jawa Barat, merupakan daerah dengan jumlah pemilih banyak. Hal itu membuat Bogor menjadi menarik bagi para politisi.
 
@@ -155,7 +155,7 @@ class DatabaseSeeder extends Seeder
             'category_id' => 2,
             'author_id' => 2,
             'title' => 'Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius',
-            'slug' => Str::slug(strtolower('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius')),
+            'slug' => Str::slug(strtolower('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius cat 2')),
             'excerpt' => Str::excerpt('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius'),
             'body' => 'Polisi menyebut menemukan dua botol alkohol jenis anggur di tempat sampah Rusun Polri Cikeas, Bogor, Jawa Barat, yang menjadi lokasi tewasnya Bripda Ignatius Dwi Frisco Sirage. Ia tewas tertembak oleh rekannya, Bripda IMS.
             "Botol-botol ditemukan di tempat sampah di belakang rusun. Ada dua botol anggur merek Kawa-Kawa," ujar Direktur Reserse Kriminal Umum Polda Jawa Barat Kombes Surawan saat dikonfirmasi, Rabu (2/8).
@@ -184,7 +184,7 @@ class DatabaseSeeder extends Seeder
             'category_id' => 3,
             'author_id' => 2,
             'title' => 'Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius',
-            'slug' => Str::slug(strtolower('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius')),
+            'slug' => Str::slug(strtolower('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius cat 3')),
             'excerpt' => Str::excerpt('Polisi Temukan 2 Botol Anggur di Lokasi Tewasnya Bripda Ignatius'),
             'body' => 'Polisi menyebut menemukan dua botol alkohol jenis anggur di tempat sampah Rusun Polri Cikeas, Bogor, Jawa Barat, yang menjadi lokasi tewasnya Bripda Ignatius Dwi Frisco Sirage. Ia tewas tertembak oleh rekannya, Bripda IMS.
             "Botol-botol ditemukan di tempat sampah di belakang rusun. Ada dua botol anggur merek Kawa-Kawa," ujar Direktur Reserse Kriminal Umum Polda Jawa Barat Kombes Surawan saat dikonfirmasi, Rabu (2/8).
