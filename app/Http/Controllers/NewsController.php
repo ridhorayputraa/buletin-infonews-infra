@@ -21,17 +21,14 @@ class NewsController extends Controller
                 'categories' => $category,
                 'news' => $news
             ]);
-        }   
-
-        
-        $news = News::with('category', 'authors')->where('slug', $slug);
+        }   // News detail page requested
+        $news = News::with('category', 'authors')->where('slug', $slug)->first();
 
         if (!$news) {
             //    News kosong
-            // 404
         }
 
-        return view('news.detail', [
+        return view('home.news', [
             'news' => $news,
         ]);
     }
