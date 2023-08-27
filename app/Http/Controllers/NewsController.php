@@ -10,29 +10,29 @@ class NewsController extends Controller
 {
     //
 
-public function show($slug = null)
-{
-    if ($slug) {
-        // News detail page requested
-        $news = News::with('category', 'authors')->where('slug', $slug)->first();
+    public function show($slug = null)
+    {
+        if (!$slug) {
+
+            $news = News::with('category', 'authors')->get();
+            $category = Category::with('news')->get();
+
+            return view('home.home', [
+                'categories' => $category,
+                'news' => $news
+            ]);
+        }   
+
+        
+        $news = News::with('category', 'authors')->where('slug', $slug);
 
         if (!$news) {
-            // Handle the case where news item is not found
+            //    News kosong
+            // 404
         }
 
         return view('news.detail', [
             'news' => $news,
         ]);
-    } else {
-        // Home page requested
-        $news = News::with('category', 'authors')->get();
-        $category = Category::with('news')->get();
-
-        return view('home.home', [
-            'categories' => $category,
-            'news' => $news
-        ]);
     }
-}
-
 }
