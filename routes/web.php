@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\NewsController;
 use App\Http\Livewire\Article;
 use App\Models\Author;
 use App\Models\Category;
@@ -18,15 +19,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $news = News::with('category', 'authors')->get();
-    $category = Category::with('news')->get();
-
-    return view('home.home', [
-        'categories' => $category,
-        'news' => $news
-    ]);
-});
+Route::get('/{slug?}', [NewsController::class, 'show']);
 Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
 
 // use App\Http\Livewire\CategoryShow;
