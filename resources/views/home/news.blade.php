@@ -12,7 +12,8 @@
         <p>
             Dibuat pada: {{ $news->created_at->isoFormat('dddd, D MMM YYYY HH:mm') }} WIB
         </p>
-
+        <img class="rounded-3xl	" width="656" height="399" src="{{ asset('storage/images/' . $news->thumbnail) }}"
+            alt="" title="" />
     </div>
     <div>
         {{-- terpopuler right --}}
