@@ -1,21 +1,29 @@
-{{-- @dd($news) --}}
+@extends('layouts.main')
+@section('container')
 <div class="flex flex-row">
     {{-- Wrapper --}}
     <div>
-        {{-- Main content left --}}
-        <p>
+        <div class="">
+
+            {{-- Main content left --}}
+        <p class="text-blackPrimary font-serif	font-bold text-5xl ">
             {{ $news->title }}
         </p>
-        <p class="bg-redHeavy">
+        <p class="text-redHeavy font-poppins font-normal text-xl">
             {{ $news->authors->name }}
         </p>
+     
         <p>
-            Dibuat pada: {{ $news->created_at->isoFormat('dddd, D MMM YYYY HH:mm') }} WIB
+            Dibuat pada: {{ $news->created_at->locale('id')->diffForHumans() }} 
         </p>
-        <img class="rounded-3xl	" width="656" height="399" src="{{ asset('storage/images/' . $news->thumbnail) }}"
-            alt="{{$news->title}}" title="" />
     </div>
+        <img class="rounded-3xl	" width="656" height="399" src="{{ asset('storage/images/' . $news->thumbnail) }}"
+            alt="{{$news->title}}" title="{{$news->title}}" />
+    </div>
+
     <div>
         {{-- terpopuler right --}}
     </div>
 </div>
+
+@endsection

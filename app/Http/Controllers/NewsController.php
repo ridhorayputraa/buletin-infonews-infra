@@ -30,6 +30,7 @@ class NewsController extends Controller
 
         return view('home.news', [
             'news' => $news,
+            'categories' => Category::all()
         ]);
     }
 }
