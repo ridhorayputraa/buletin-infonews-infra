@@ -2,8 +2,8 @@
 @section('container')
 <div class="flex flex-row">
     {{-- Wrapper --}}
-    <div>
-        <div class="">
+    <div class="flex flex-row">
+        <div class="w-8/12 border border-redHeavy">
 
             {{-- Main content left --}}
         <p class="text-blackPrimary font-serif	font-bold text-5xl ">
@@ -16,14 +16,19 @@
         <p>
             Dibuat pada: {{ $news->created_at->locale('id')->diffForHumans() }} 
         </p>
-    </div>
-        <img class="rounded-3xl	" width="656" height="399" src="{{ asset('storage/images/' . $news->thumbnail) }}"
+   
+        <img class="rounded-3xl	 max-w-full"height="399" src="{{ asset('storage/images/' . $news->thumbnail) }}"
             alt="{{$news->title}}" title="{{$news->title}}" />
-    </div>
 
-    <div>
-        {{-- terpopuler right --}}
-    </div>
+
+        </div>
+
+        <div class="w-4/12 border border-redHeavy">
+            {{-- terpopuler right --}}
+            <p>Ridho ganteng</p>
+        </div>
+
+     </div>
 </div>
 
 @endsection
