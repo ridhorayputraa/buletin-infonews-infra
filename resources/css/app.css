@@ -7,3 +7,26 @@
 .box {
     box-shadow: -5px 9px 10px 0px rgba(0, 0, 0, 0.25);
 }
+
+.Terpopuler {
+    display: inline-block;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+.Terpopuler::after {
+    content: "";
+    display: block;
+    width: 70%; /* Ukuran awal garis bawah */
+    height: 2px;
+    background-color: #DB7475; /* Warna garis bawah */
+    position: absolute;
+    bottom: 0;
+    left: 0%; /* Posisi awal dari 80% width */
+    transition: width 0.3s; /* Animasi transisi lebar */
+}
+
+.Terpopuler:hover::after {
+    width: 100%; /* Lebar saat di hover */
+    left: 0; /* Posisi saat di hover */
+}
