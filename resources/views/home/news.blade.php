@@ -24,6 +24,12 @@
                     {{ $news->photo_description }}
                 </p>
 
+                <div class="border border-blackPrimary mt-10">
+                    <p>
+                        {{$news->body}}
+                    </p>
+                </div>
+                    
             </div>
 
             <div class="w-4/12 border mt-5 ml-9 border-redHeavy">
