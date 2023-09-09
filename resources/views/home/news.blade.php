@@ -20,7 +20,8 @@
                 <img class="rounded-3xl	 max-w-full border border-redHeavy" width="100%"
                     src="{{ asset('storage/images/' . $news->thumbnail) }}" alt="{{ $news->title }}"
                     title="{{ $news->title }}" />
-                <p>
+
+                <p class="text-blackPrimary opacity-80 mt-3">
                     {{ $news->photo_description }}
                 </p>
 
