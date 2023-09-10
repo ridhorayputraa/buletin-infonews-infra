@@ -22,12 +22,12 @@
                     title="{{ $news->title }}" />
 
                 <p class="text-blackPrimary opacity-80 mt-3">
-                    {{ $news->photo_description }}
+                    {{$news->photo_description }}
                 </p>
 
                 <div class="border border-blackPrimary mt-10">
                     <p>
-                        {{$news->body}}
+                        {!!$news->excerpt!!}
                     </p>
                 </div>
                     

@@ -31,7 +31,7 @@
 
             {{-- <p class="truncate">{{ $news[0]->excerpt }}</p> --}}
             <p class="text-blackPrimary text-1xl font-normal font-poppins">
-                {{ Illuminate\Support\Str::limit($news[0]->body, 370) }}</p>
+                {!! Illuminate\Support\Str::limit($news[0]->excerpt, 370) !!}</p>
         </div>
     </div>
 
