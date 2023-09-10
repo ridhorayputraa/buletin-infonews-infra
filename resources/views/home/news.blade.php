@@ -27,7 +27,7 @@
 
                 <div class="border border-blackPrimary mt-10">
                     <p>
-                        {!!$news->excerpt!!}
+                        {!!$news->body!!}
                     </p>
                 </div>
                     
