@@ -36,11 +36,4 @@
     </div>
 
     @include('partials.data')
-    
 @endsection
-
-
-
-
-
-
