@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@dd($news )
+{{-- @dd($news ) --}}
 @section('container')
     <div class="flex flex-row">
         {{-- Wrapper --}}

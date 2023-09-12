@@ -18,7 +18,7 @@ class NewsController extends Controller
             $active = $category->slug;
         }
 
-        return view('home.news', [
+        return view('home.home', [
             'active' => $active,
             'news' => News::latest()
                 ->filters(request(['category']))->get(),
@@ -26,28 +26,18 @@ class NewsController extends Controller
         ]);
     }
 
-    // public function show($slug = null)
-    // {
-    //     if (!$slug) {
+    public function show($slug = null)
+    {
 
-    //         $news = News::with('category', 'authors')->get();
-    //         $category = Category::with('news')->get();
+        $news = News::with('category', 'authors')->where('slug', $slug)->first();
 
-    //         return view('home.home', [
-    //             'categories' => $category,
-    //             'news' => $news
-    //         ]);
-    //     }   // News detail page requested
-    //     $news = News::with('category', 'authors')->where('slug', $slug)->first();
+        if (!$news) {
+            //    News kosong
+        }
 
-    //     if (!$news) {
-    //         //    News kosong
-    //     }
-
-    //     return view('home.news', [
-    //         'news' => $news,
-    //         'categories' => Category::all()
-    //     ]);
-    // }
-    // }
+        return view('home.news', [
+            'news' => $news,
+            'categories' => Category::all()
+        ]);
+    }
 }
