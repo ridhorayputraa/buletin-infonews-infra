@@ -1,4 +1,5 @@
 @extends('layouts.main')
+@dd($news )
 @section('container')
     <div class="flex flex-row">
         {{-- Wrapper --}}
@@ -30,7 +31,7 @@
                         {!!$news->body!!}
                     </p>
                 </div>
-                    
+
             </div>
 
             <div class="w-4/12 border mt-5 ml-9 border-redHeavy">

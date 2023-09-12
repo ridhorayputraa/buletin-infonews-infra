@@ -21,8 +21,7 @@ class NewsController extends Controller
         return view('home.news', [
             'active' => $active,
             'news' => News::latest()
-                ->filters(request(['category']))
-                ->withQueryString(),
+                ->filters(request(['category']))->get(),
             'categories' => Category::all(),
         ]);
     }

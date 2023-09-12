@@ -19,7 +19,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{slug?}', [NewsController::class, 'show']);
+Route::get('/', [NewsController::class, 'index']);
+// Route::get('/{slug?}', [NewsController::class, 'show']);
 Route::get('/category/{slug}', [CategoryController::class, 'show'])->name('category.show');
 
 // use App\Http\Livewire\CategoryShow;
