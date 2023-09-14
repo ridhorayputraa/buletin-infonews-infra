@@ -36,6 +36,7 @@
 </body>
 
 <script>
+    // js
     const carousel = document.getElementById('carousel');
     let isMouseDown = false;
     let startX;
