@@ -46,6 +46,7 @@
         isMouseDown = true;
         startX = e.pageX - carousel.offsetLeft;
         scrollLeft = carousel.scrollLeft;
+        console.log(e, 'Mouse Scroll down')
     });
 
     carousel.addEventListener('mouseleave', () => {
