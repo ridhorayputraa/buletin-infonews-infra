@@ -37,6 +37,7 @@
 
 <script>
     // js
+    // {{-- Js carousel --}}
     const carousel = document.getElementById('carousel');
     let isMouseDown = false;
     let startX;
